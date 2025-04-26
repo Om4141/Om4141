@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$servername = "localhost"; // Change this if your database is hosted elsewhere
+/*$servername = "localhost"; // Change this if your database is hosted elsewhere
 $username = "root"; // Replace with your DB username
 $password = ""; // Replace with your DB password
 $dbname = "phpmyadmin"; // Replace with your database name
@@ -11,6 +11,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+*/
+// Import connection from connectioninfo.php
+include 'connectioninfo.php';
 
 // Get form input
 $uname = $_POST['login-id'];
