@@ -24,7 +24,7 @@ $uname = mysqli_real_escape_string($conn, $uname);
 $pass = mysqli_real_escape_string($conn, $pass);
 
 // Query to fetch user details
-$sql = "SELECT studentid, name, fathername, city, 12thpercent FROM userdetails WHERE studentid='$uname' AND password='$pass'";
+$sql = "SELECT studentid, name, fathername, city, `12thpercent` FROM userdetails WHERE studentid='$uname' AND password='$pass'";
 
 $result = $conn->query($sql);
 
